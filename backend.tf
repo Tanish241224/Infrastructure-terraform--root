@@ -13,6 +13,6 @@ terraform {
     region         = "us-east-1"
     key            = "batch-32/terraform.tfstate"
     encrypt        = true
-    dynamodb_table = "terraform-locks"
+    dynamodb_table = "terraform-lockunlock"
   }
 }
