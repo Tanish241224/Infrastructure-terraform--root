@@ -1,18 +1,16 @@
 terraform {
   required_version = ">= 1.3.0"
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
   }
-
   backend "s3" {
-    bucket         = "amdocs-tfstate"
-    region         = "us-east-1"
-    key            = "batch-32/terraform.tfstate"
-    encrypt        = true
-    dynamodb_table = "terraform-lockunlock"
+    bucket       = "amdocs-tfstate"
+    region       = "us-east-1"
+    key          = "batch-32/terraform.tfstate"
+    encrypt      = true
+    use_lockfile = true
   }
 }
