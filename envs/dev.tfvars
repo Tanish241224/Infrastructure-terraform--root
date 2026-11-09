@@ -2,7 +2,7 @@ environment   = "dev"
 project_name  = "myapp"
 aws_region    = "us-east-1"
 vpc_cidr      = "10.0.0.0/16"
-bucket_suffix = "assets-dev-20240102-ygminds-batch-32"
+bucket_suffix = "tanish-20261109-dev"
 
 tags = {
   Owner      = "dev-team"
