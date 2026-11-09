@@ -7,7 +7,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket       = "amdocs-tfstate"
+    bucket       = "amdocs-tfstate-jenkins"
     region       = "us-east-1"
     key          = "batch-32/terraform.tfstate"
     encrypt      = true
